@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A6 English Janala</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="w-11/12 mx-auto py-3  container">
+    <header>
+        <nav  id="nav-hide">
+            <div  class="lg:flex lg:justify-between   ">
+                <h2 class="flex text-[20px] font-semibold ">English <img src="assets/logo.png" alt=""> জানালা</h2>
+                <div class="sm:grid sm:grid-cols-2 lg:grid-cols-3 lg:gap-3">
+                    <button id="btn-scroll" class="btn"><img src="assets/fa-circle-question.png" alt="">FAQ</button>
+                    <button id="bottom-scroll" class="btn"><img src="assets/fa-book-open.png" alt="">Learn</button>
+                    <button id="btn-logout" class="btn" ><img src="assets/fa-arrow-right-from-bracket.png" alt="">Logout</button>
+                </div>
+            </div>
+           
+        </nav>
+         <banner id="bannet-hide" class="">
+                <div class="py-24 flex mx-auto justify-between justify-items-center">
+                    <div>
+                        <h2 class="font-bold text-3xl"><span class="text-blue-500 font-bold text-3xl">English</span> is
+                            Easy!!</h2>
+                        <p class="text-[24px] font-medium">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন
+                            অথবা <br> আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য
+                            একটি Level এ</p>
+                        <div class="space-y-3 py-8">
+                            <input id="" type="text" placeholder="Enter your name" class="input input-md" /> <br>
+                            <input id="passward-btn" type="text" placeholder="Enter passsward 123456" class="input input-md" /> <br>
+                            <button id="get-btn" class="btn btn-primary text-[16px] font-semibold">Get started</button>
+                        </div>
+                   </div>
+                    <img class="w-[600px] h-[500px]" src="assets/hero-student.png" alt="">
+                </div>
+            </banner>
+    </header>
+   
+    <main id="main-hide" class="py-24"> 
+    <h2 class="text-[36px] font-bold text-center"><span class="text-blue-400 ">Let's</span> Learn Vocabularies</h2>
+     <div class="gap-3 sm:col-span-3 text-center py-8">
+        <button id="lesson1" onclick="loadProduct()" class="btn bg-blue-300 text-violet-400"><img src="assets/fa-book-open.png" alt=""> Lesson -1</button>
+        <button id="lesson2" onclick="loadCategories()" class="btn bg-blue-300 text-violet-400"><img src="assets/fa-book-open.png" alt=""> Lesson -2</button>
+        <button id="lesson3" onclick="loadProduct3()"  class="btn  bg-blue-300 text-violet-400"><img src="assets/fa-book-open.png" alt=""> Lesson -3</button>
+        <button id="lesson4" onclick="showData4()"  class="btn  bg-blue-300 text-violet-400"><img src="assets/fa-book-open.png" alt=""> Lesson -4</button>
+        <button id="lesson5" onclick="loadProduct5()" class="btn  bg-blue-300 text-violet-400"><img src="assets/fa-book-open.png" alt=""> Lesson -5</button>
+        <button id="lesson6" onclick="loadProduct6()" class="btn  bg-blue-300 text-violet-400"><img src="assets/fa-book-open.png" alt=""> Lesson -6</button>
+        <button id="lesson7" onclick="showDatas() " class="btn  bg-blue-300 text-violet-400"><img src="assets/fa-book-open.png" alt=""> Lesson -7</button>
+     </div>
+     <div id="card-container" class="bg-[#F8F8F8] text-center rounded-xl p-5 grid lg:grid-cols-3 grid-cols-1  ">
+ 
+
+     </div>
+
+     <section class="py-18 space-y-5">
+     <h2 class="text-[36px] font-bold text-center"><span class="text-blue-400 ">Frequently </span> Asked Questions </h2>
+     <div class="collapse collapse-plus bg-base-100 border border-base-300 py-4">
+  <input type="radio" name="my-accordion-3" checked="checked" />
+  <div class="collapse-title font-semibold">1.How can I start learning English on this website?</div>
+  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+</div>
+     <div class="collapse collapse-plus bg-base-100 border border-base-300 py-4">
+  <input type="radio" name="my-accordion-3" checked="checked" />
+  <div class="collapse-title font-semibold">2.Do I need to create an account?</div>
+  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+</div>
+<div class="collapse collapse-plus bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-3" />
+  <div class="collapse-title font-semibold">3.Is this website free to use?</div>
+  <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+</div>
+<div class="collapse collapse-plus bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-3" />
+  <div class="collapse-title font-semibold">4.How can I build my English vocabulary?</div>
+  <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+<div class="collapse collapse-plus bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-3" />
+  <div class="collapse-title font-semibold">5.Do you offer certificates for completed courses?</div>
+  <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+
+
+     </section>
+
+
+</main>
+    <footer class="flex justify-between">
+        <div>
+            <h2 class="flex text-[20px] font-semibold ">English <img src="assets/logo.png" alt=""> জানালা</h2>
+             <h2 class="text-[20px] font-medium">ইংরেজি শিখুন সহজে</h2>
+            <p class="text-[16px] font-normal">Providing ED-Tech Applications since 2025</p>
+        </div>
+         <div class="space-y-2">
+         <h2>Follow us</h2>
+         <div  class="flex  gap-3">
+            <img src="assets/fb-thumb.png" alt="">
+            <img  src="assets/youtube-thumb.png" alt="">
+            <img src="assets/github-thumb.png" alt="">
+            <img src="assets/instagram-thumb.png" alt="">
+         </div>
+         </div>
+    </footer>
+    <script src="script/script.js"></script>
+    <script src="script/test.js"></script>
+</body>
+
+</html>
