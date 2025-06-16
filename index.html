@@ -17,7 +17,7 @@
                 <h2 class="flex text-[20px] font-semibold ">English <img src="assets/logo.png" alt=""> জানালা</h2>
                 <div class="sm:grid sm:grid-cols-2 lg:grid-cols-3 lg:gap-3">
                     <button id="btn-scroll" class="btn"><img src="assets/fa-circle-question.png" alt="">FAQ</button>
-                    <button id="bottom-scroll" class="btn"><img src="assets/fa-book-open.png" alt="">Learn</button>
+                    <button onclick=" learnValues()" id="learn-btn" class="btn"><img src="assets/fa-book-open.png" alt="">Learn</button>
                     <button id="btn-logout" class="btn" ><img src="assets/fa-arrow-right-from-bracket.png" alt="">Logout</button>
                 </div>
             </div>
@@ -41,6 +41,10 @@
                 </div>
             </banner>
     </header>
+
+    <div id="learn-hide" class="lern-container">
+
+    </div>
    
     <main id="main-hide" class="py-24"> 
     <h2 class="text-[36px] font-bold text-center"><span class="text-blue-400 ">Let's</span> Learn Vocabularies</h2>
@@ -53,6 +57,7 @@
         <button id="lesson6" onclick="loadProduct6()" class="btn  bg-blue-300 text-violet-400"><img src="assets/fa-book-open.png" alt=""> Lesson -6</button>
         <button id="lesson7" onclick="showDatas() " class="btn  bg-blue-300 text-violet-400"><img src="assets/fa-book-open.png" alt=""> Lesson -7</button>
      </div>
+
      <div id="card-container" class="bg-[#F8F8F8] text-center rounded-xl p-5 grid lg:grid-cols-3 grid-cols-1  ">
  
 
@@ -63,22 +68,30 @@
      <div class="collapse collapse-plus bg-base-100 border border-base-300 py-4">
   <input type="radio" name="my-accordion-3" checked="checked" />
   <div class="collapse-title font-semibold">1.How can I start learning English on this website?</div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+  <div class="collapse-content text-sm">Tell me your English level (beginner, intermediate, or advanced).
+You can learn grammar, vocabulary, speaking, or writing—your choice!
+I’ll guide you step by step with easy lessons and practice.
+</div>
 </div>
      <div class="collapse collapse-plus bg-base-100 border border-base-300 py-4">
   <input type="radio" name="my-accordion-3" checked="checked" />
   <div class="collapse-title font-semibold">2.Do I need to create an account?</div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+  <div class="collapse-content text-sm">You don’t have to create a new account to start learning.
+However, having a ChatGPT account lets you save chats and learn anytime.</div>
 </div>
 <div class="collapse collapse-plus bg-base-100 border border-base-300">
   <input type="radio" name="my-accordion-3" />
   <div class="collapse-title font-semibold">3.Is this website free to use?</div>
-  <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+  <div class="collapse-content text-sm">Yes, this website has a free version you can use to learn English.
+There’s also a paid version with extra features, but the free one is enough to get started!
+</div>
 </div>
 <div class="collapse collapse-plus bg-base-100 border border-base-300">
   <input type="radio" name="my-accordion-3" />
   <div class="collapse-title font-semibold">4.How can I build my English vocabulary?</div>
-  <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+  <div class="collapse-content text-sm">You can build your English vocabulary by learning a few new words every day and using them in sentences.
+Reading books, watching English videos, and practicing with me will help you remember them better!
+</div>
 </div>
 <div class="collapse collapse-plus bg-base-100 border border-base-300">
   <input type="radio" name="my-accordion-3" />
@@ -88,9 +101,10 @@
 
 
      </section>
-
+ 
 
 </main>
+
     <footer class="flex justify-between">
         <div>
             <h2 class="flex text-[20px] font-semibold ">English <img src="assets/logo.png" alt=""> জানালা</h2>

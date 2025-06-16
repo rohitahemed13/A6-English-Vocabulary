@@ -56,7 +56,7 @@ const showData = (element) => {
     <p class="text-[18px] font-normal">Meaning /Pronounciation</p>
     <h2 class="text-[22px] font-medium">"${element.meaning}/ ${element.pronunciation}"</h2>
      <div class="flex justify-around">
-      <i onclick="showModal()" class="fa-solid fa-circle-info text-green-500 "></i>
+      <i id="info-btn" class="fa-solid fa-circle-info text-green-500 "></i>
       <i class="fa-solid fa-volume-high text-blue-500"></i>
      </div>
     </div>
@@ -77,7 +77,7 @@ const showData = (element) => {
 
    const showDatas = (element) => {
   const cardContainer = document.getElementById("card-container");
-  cardContainer.innerHTML = ""; // ✅ Clear previous cards
+  cardContainer.innerHTML = ""; 
    const div = document.createElement("div");
 
     div.innerHTML = `
@@ -85,9 +85,9 @@ const showData = (element) => {
        <p class="text-[13.38] font-normal">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
        <h2 class="text-[34] font-medium">নেক্সট Lesson এ যান</h2>
     `;
-    cardContainer.appendChild(div); // ✅ Add each card
+    cardContainer.appendChild(div); 
  
-  hideLoadingMessage(); // Hide the "count" message
+  hideLoadingMessage(); 
 };
 
 
@@ -103,53 +103,53 @@ const showLoadingMessage = () => {
 
 const showData4 = (element) => {
   const cardContainer = document.getElementById("card-container");
-  cardContainer.innerHTML = ""; // Clear previous cards
+  cardContainer.innerHTML = ""; 
 
   const div = document.createElement("div");
 
-  // Make the div full height and center content
+ 
   div.classList.add(
     "flex", 
     "flex-col", 
     "items-center", 
     "justify-center", 
     "text-center", 
-    "h-[300px]" // you can change height as needed
+    "h-[300px]"
   );
 
   div.innerHTML = `
     <img class="mb-4 w-16 h-16" src="assets/alert-error.png" alt="">
-    <p class="text-[13.38px] font-normal mb-2">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
-    <h2 class="text-[34px] font-medium">নেক্সট Lesson এ যান</h2>
+    <p class="text-[13.38px] font-normal mb-2">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি। </p>
+    <h2 class="text-[34px] font-medium">নেক্সট Lesson এ যান </h2>
   `;
 
   cardContainer.appendChild(div);
 
-  hideLoadingMessage(); // Hide the loading message
+  hideLoadingMessage(); 
 };
 
 
-// buttton color exchange
+
 const ids = ["lesson1", "lesson2", "lesson3","lesson4", "lesson5", "lesson6","lesson7"];
 
   ids.forEach(id => {
     const btn = document.getElementById(id);
 
     btn.addEventListener("click", () => {
-      // Remove active class from all buttons
+      
       ids.forEach(i => {
         document.getElementById(i).classList.remove("bg-blue-500", "text-white");
         document.getElementById(i).classList.add("bg-gray-300");
       });
 
-      // Add active style to clicked one
+      
       btn.classList.remove("bg-gray-300");
       btn.classList.add("bg-blue-500", "text-white");
     });
   });
 
 
-  // scroll
+
 
   document.getElementById("btn-scroll").addEventListener("click", function () {
 
@@ -163,7 +163,7 @@ const ids = ["lesson1", "lesson2", "lesson3","lesson4", "lesson5", "lesson6","le
  })
   
    
-  // ✅ Clear previous cards
+
 
 const hideLoadingMessage = () => {
   const count = document.getElementById("count");
